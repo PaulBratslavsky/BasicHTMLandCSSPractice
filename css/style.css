@@ -47,6 +47,12 @@ p {
   line-height: 1.4;
 }
 
+.center-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .button {
   color: #333;
   background: #e49329;
@@ -59,6 +65,25 @@ p {
 
   border: none;
   cursor: pointer;
+}
+
+.submit {
+  color: #333;
+  background: #e49329;
+
+  display: inline-block;
+  
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  border: none;
+  cursor: pointer;
+}
+
+.submit:hover {
+  color: #e49329;
+  background: #333;
 }
 
 .button:hover {
@@ -85,6 +110,9 @@ p {
   color: #333;
 }
 
+.padding-80 {
+  padding: 80px 0;
+}
 
 .clear-fix {
   clear: both;
@@ -314,9 +342,12 @@ p {
   padding: 1rem;
 }
 
+
+
 .testimonial {
   margin: 40px 0;
   padding: 1rem;
+  border-radius: 1px;
 }
 
 .testimonial img {
@@ -324,7 +355,64 @@ p {
   height: 100px;
   width: 100px;
   float: left;
+  border-radius: 1px;
 }
 
-.testimonial p {
+
+/***********************
+    CONTACT PAGE
+***********************/
+
+#section-contact-form {
+  background: #eee;
+  color: #333;
+  min-height: 80vh;
+}
+
+#form-container {
+  background: white;
+  padding: 2rem 1rem;
+  border-radius: 4px;
+}
+
+#section-contact-form h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+
+#section-contact-form .form-group {
+   margin-bottom: 20px;
+}
+
+#section-contact-form input,
+#section-contact-form textarea {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.2rem;
+  border: #ddd solid 1px;
+}
+
+#section-contact-form input:focus,
+#section-contact-form textarea:focus {
+  outline: none;
+  background: #f5f4f4;
+  border-color: #e49329;
+}
+
+#section-contact-form textarea {
+  height: 150px;
+}
+
+#section-contact-form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+#section-contact-form button {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
